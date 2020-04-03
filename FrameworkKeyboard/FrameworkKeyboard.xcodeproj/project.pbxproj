@@ -195,6 +195,8 @@
 		046F25472436AE970098676A /* FrameworkKeyboard */ = {
 			isa = PBXGroup;
 			children = (
+				046F25E92436C40E0098676A /* Sources */,
+				046F25EA2436C41A0098676A /* Resources */,
 				046F25502436B1C90098676A /* lib */,
 				046F25482436AE970098676A /* FrameworkKeyboard.h */,
 				046F25492436AE970098676A /* Info.plist */,
@@ -205,15 +207,6 @@
 		046F25502436B1C90098676A /* lib */ = {
 			isa = PBXGroup;
 			children = (
-				046F25512436B1C90098676A /* Framework */,
-				046F25732436B1C90098676A /* Analitycs */,
-				046F25762436B1C90098676A /* Models */,
-				046F257E2436B1C90098676A /* ViewControllers */,
-				046F25852436B1C90098676A /* UIkit+View */,
-				046F25882436B1C90098676A /* Asset.xcassets */,
-				046F25892436B1C90098676A /* AppContext */,
-				046F258E2436B1C90098676A /* Views */,
-				046F259E2436B1C90098676A /* Services */,
 			);
 			path = lib;
 			sourceTree = "<group>";
@@ -326,9 +319,6 @@
 		046F257E2436B1C90098676A /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				046F257F2436B1C90098676A /* KeyboardNumericViewController.xib */,
-				046F25802436B1C90098676A /* KeyboardAlphabeticController.xib */,
-				046F25812436B1C90098676A /* EmojiKeyboardViewController.xib */,
 				046F25822436B1C90098676A /* KeyboardNumericViewController.swift */,
 				046F25832436B1C90098676A /* EmojiKeyboardViewController.swift */,
 				046F25842436B1C90098676A /* KeyboardAlphabeticController.swift */,
@@ -359,10 +349,6 @@
 		046F258E2436B1C90098676A /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				046F258F2436B1C90098676A /* OtherActionViewCell.xib */,
-				046F25902436B1C90098676A /* EmojiViewCell.xib */,
-				046F25912436B1C90098676A /* OtherActionsViewController.xib */,
-				046F25922436B1C90098676A /* CopyPasteEmojiView.xib */,
 				046F25932436B1C90098676A /* EmojiPage.swift */,
 				046F25942436B1C90098676A /* EmojiSponsorViewCell.swift */,
 				046F25952436B1C90098676A /* OtherActionsViewController.swift */,
@@ -371,8 +357,6 @@
 				046F25982436B1C90098676A /* EmojiViewCell.swift */,
 				046F25992436B1C90098676A /* CopyPasteEmojiView.swift */,
 				046F259A2436B1C90098676A /* MenuBottomContainer.swift */,
-				046F259B2436B1C90098676A /* EmojiSponsorViewCell.xib */,
-				046F259C2436B1C90098676A /* AccessGrantedView.xib */,
 				046F259D2436B1C90098676A /* OtherActionViewCell.swift */,
 			);
 			path = Views;
@@ -384,6 +368,54 @@
 				046F259F2436B1C90098676A /* EmojiKeyBoardService.swift */,
 			);
 			path = Services;
+			sourceTree = "<group>";
+		};
+		046F25E92436C40E0098676A /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				046F259E2436B1C90098676A /* Services */,
+				046F258E2436B1C90098676A /* Views */,
+				046F25892436B1C90098676A /* AppContext */,
+				046F25852436B1C90098676A /* UIkit+View */,
+				046F257E2436B1C90098676A /* ViewControllers */,
+				046F25762436B1C90098676A /* Models */,
+				046F25732436B1C90098676A /* Analitycs */,
+				046F25512436B1C90098676A /* Framework */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		046F25EA2436C41A0098676A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				046F25EC2436C4940098676A /* Views */,
+				046F25882436B1C90098676A /* Asset.xcassets */,
+				046F25EB2436C44F0098676A /* ViewControllers */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		046F25EB2436C44F0098676A /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				046F257F2436B1C90098676A /* KeyboardNumericViewController.xib */,
+				046F25802436B1C90098676A /* KeyboardAlphabeticController.xib */,
+				046F25812436B1C90098676A /* EmojiKeyboardViewController.xib */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		046F25EC2436C4940098676A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				046F258F2436B1C90098676A /* OtherActionViewCell.xib */,
+				046F25902436B1C90098676A /* EmojiViewCell.xib */,
+				046F25912436B1C90098676A /* OtherActionsViewController.xib */,
+				046F25922436B1C90098676A /* CopyPasteEmojiView.xib */,
+				046F259B2436B1C90098676A /* EmojiSponsorViewCell.xib */,
+				046F259C2436B1C90098676A /* AccessGrantedView.xib */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		3151B2541A3C668F37696ED2 /* Pods */ = {
