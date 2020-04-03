@@ -1,0 +1,371 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="KeyboardAlphabeticController" customModule="PSGKeyboard" customModuleProvider="target">
+            <connections>
+                <outlet property="numericKey" destination="Ya7-Y6-PRm" id="ukT-hi-UBr"/>
+                <outlet property="returnKey" destination="3ql-W9-KWu" id="DP7-Vn-fCa"/>
+                <outlet property="shiftKey" destination="cyy-wl-3Zp" id="UNQ-Kk-f42"/>
+                <outlet property="spaceKey" destination="peH-Rb-UoD" id="nh2-ek-x8B"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outletCollection property="buttonKeyCollection" destination="8eZ-S0-pKf" collectionClass="NSMutableArray" id="QxV-J1-Y1C"/>
+                <outletCollection property="buttonKeyCollection" destination="zTy-SG-Wlo" collectionClass="NSMutableArray" id="VIy-MF-vgf"/>
+                <outletCollection property="buttonKeyCollection" destination="iOY-F2-TfX" collectionClass="NSMutableArray" id="9DK-LT-Mx7"/>
+                <outletCollection property="buttonKeyCollection" destination="fiU-xp-KWq" collectionClass="NSMutableArray" id="qtT-dq-1Xg"/>
+                <outletCollection property="buttonKeyCollection" destination="PUS-EC-rm0" collectionClass="NSMutableArray" id="N7g-dr-6Ka"/>
+                <outletCollection property="buttonKeyCollection" destination="vag-YQ-UDE" collectionClass="NSMutableArray" id="xXT-l6-NgL"/>
+                <outletCollection property="buttonKeyCollection" destination="IVG-sm-uOt" collectionClass="NSMutableArray" id="tWM-S0-gaR"/>
+                <outletCollection property="buttonKeyCollection" destination="LwE-AK-djg" collectionClass="NSMutableArray" id="GVh-bD-ucc"/>
+                <outletCollection property="buttonKeyCollection" destination="cwo-s2-8o1" collectionClass="NSMutableArray" id="X5Z-cw-ONf"/>
+                <outletCollection property="buttonKeyCollection" destination="Iaz-Lw-x5i" collectionClass="NSMutableArray" id="Bzs-0w-Vko"/>
+                <outletCollection property="buttonKeyCollection" destination="MnB-6R-xUy" collectionClass="NSMutableArray" id="qcb-fq-Bj5"/>
+                <outletCollection property="buttonKeyCollection" destination="HWp-WQ-7uo" collectionClass="NSMutableArray" id="UhD-6b-Ben"/>
+                <outletCollection property="buttonKeyCollection" destination="Etx-NK-LG7" collectionClass="NSMutableArray" id="rTb-JC-5f0"/>
+                <outletCollection property="buttonKeyCollection" destination="maS-tw-8xP" collectionClass="NSMutableArray" id="MFt-cf-cxp"/>
+                <outletCollection property="buttonKeyCollection" destination="NU8-ic-jd4" collectionClass="NSMutableArray" id="1UU-X0-vRU"/>
+                <outletCollection property="buttonKeyCollection" destination="iO6-og-iso" collectionClass="NSMutableArray" id="Upk-iV-vom"/>
+                <outletCollection property="buttonKeyCollection" destination="OSn-RU-KSk" collectionClass="NSMutableArray" id="BN2-oN-ezh"/>
+                <outletCollection property="buttonKeyCollection" destination="gsf-8b-WL7" collectionClass="NSMutableArray" id="WYb-M8-YSX"/>
+                <outletCollection property="buttonKeyCollection" destination="292-rA-tAD" collectionClass="NSMutableArray" id="piy-Mx-ZcP"/>
+                <outletCollection property="buttonKeyCollection" destination="Mgf-Xl-6DA" collectionClass="NSMutableArray" id="7Sh-yj-3gs"/>
+                <outletCollection property="buttonKeyCollection" destination="RQv-4m-Hvx" collectionClass="NSMutableArray" id="DKk-mJ-SZY"/>
+                <outletCollection property="buttonKeyCollection" destination="fKd-bq-PdX" collectionClass="NSMutableArray" id="hzJ-7k-tp1"/>
+                <outletCollection property="buttonKeyCollection" destination="cdS-Gz-V9I" collectionClass="NSMutableArray" id="kfp-RQ-U3B"/>
+                <outletCollection property="buttonKeyCollection" destination="FJH-Kc-PKI" collectionClass="NSMutableArray" id="AUh-3g-VZ7"/>
+                <outletCollection property="buttonKeyCollection" destination="f3W-ct-Cn8" collectionClass="NSMutableArray" id="ePJ-hc-md2"/>
+                <outletCollection property="buttonKeyCollection" destination="edx-fY-twn" collectionClass="NSMutableArray" id="CvC-m0-RTL"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="224"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" id="g15-29-6bo" userLabel="View keyboard">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="224"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" id="VV4-ep-Ccm">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="56"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="8eZ-S0-pKf">
+                                    <rect key="frame" x="3" y="7" width="32" height="43"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <state key="normal" title="Q"/>
+                                    <connections>
+                                        <action selector="keyboardButtonTappedWithSender:" destination="-1" eventType="touchUpInside" id="7AX-hh-VsX"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="zTy-SG-Wlo">
+                                    <rect key="frame" x="41" y="7" width="32" height="43"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <state key="normal" title="W"/>
+                                    <connections>
+                                        <action selector="keyboardButtonTappedWithSender:" destination="-1" eventType="touchUpInside" id="1lq-hc-1tN"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="iOY-F2-TfX">
+                                    <rect key="frame" x="78" y="7" width="32" height="43"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <state key="normal" title="E"/>
+                                    <connections>
+                                        <action selector="keyboardButtonTappedWithSender:" destination="-1" eventType="touchUpInside" id="GSP-IB-GBF"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="fiU-xp-KWq">
+                                    <rect key="frame" x="115" y="7" width="32" height="43"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <state key="normal" title="R"/>
+                                    <connections>
+                                        <action selector="keyboardButtonTappedWithSender:" destination="-1" eventType="touchUpInside" id="NWj-wX-iZI"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="PUS-EC-rm0">
+                                    <rect key="frame" x="153" y="7" width="32" height="43"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <state key="normal" title="T"/>
+                                    <connections>
+                                        <action selector="keyboardButtonTappedWithSender:" destination="-1" eventType="touchUpInside" id="wMd-3S-rc3"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="vag-YQ-UDE">
+                                    <rect key="frame" x="190" y="7" width="32" height="43"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <state key="normal" title="Y"/>
+                                    <connections>
+                                        <action selector="keyboardButtonTappedWithSender:" destination="-1" eventType="touchUpInside" id="5ms-jU-eyu"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="IVG-sm-uOt">
+                                    <rect key="frame" x="228" y="7" width="32" height="43"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <state key="normal" title="U"/>
+                                    <connections>
+                                        <action selector="keyboardButtonTappedWithSender:" destination="-1" eventType="touchUpInside" id="XDc-DN-Dft"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="LwE-AK-djg">
+                                    <rect key="frame" x="265" y="7" width="32" height="43"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <state key="normal" title="I"/>
+                                    <connections>
+                                        <action selector="keyboardButtonTappedWithSender:" destination="-1" eventType="touchUpInside" id="uhv-h1-vxt"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="cwo-s2-8o1">
+                                    <rect key="frame" x="303" y="7" width="32" height="43"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <state key="normal" title="O"/>
+                                    <connections>
+                                        <action selector="keyboardButtonTappedWithSender:" destination="-1" eventType="touchUpInside" id="3Nx-HA-EhR"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Iaz-Lw-x5i">
+                                    <rect key="frame" x="340" y="7" width="32" height="43"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <state key="normal" title="P"/>
+                                    <connections>
+                                        <action selector="keyboardButtonTappedWithSender:" destination="-1" eventType="touchUpInside" id="uVK-ga-vXL"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                        </view>
+                        <view contentMode="scaleToFill" id="Y3y-uY-7UE">
+                            <rect key="frame" x="0.0" y="56" width="375" height="56"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="MnB-6R-xUy">
+                                    <rect key="frame" x="21" y="7" width="32" height="42"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <state key="normal" title="A"/>
+                                    <connections>
+                                        <action selector="keyboardButtonTappedWithSender:" destination="-1" eventType="touchUpInside" id="D7K-Jz-4Gk"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="HWp-WQ-7uo">
+                                    <rect key="frame" x="59" y="7" width="32" height="42"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <state key="normal" title="S"/>
+                                    <connections>
+                                        <action selector="keyboardButtonTappedWithSender:" destination="-1" eventType="touchUpInside" id="iO1-Cf-uyG"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Etx-NK-LG7">
+                                    <rect key="frame" x="96" y="7" width="32" height="42"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <state key="normal" title="D"/>
+                                    <connections>
+                                        <action selector="keyboardButtonTappedWithSender:" destination="-1" eventType="touchUpInside" id="12U-Lf-XVg"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="maS-tw-8xP">
+                                    <rect key="frame" x="134" y="7" width="32" height="42"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <state key="normal" title="F"/>
+                                    <connections>
+                                        <action selector="keyboardButtonTappedWithSender:" destination="-1" eventType="touchUpInside" id="Nbh-96-Asa"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="NU8-ic-jd4">
+                                    <rect key="frame" x="172" y="7" width="32" height="42"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <state key="normal" title="G"/>
+                                    <connections>
+                                        <action selector="keyboardButtonTappedWithSender:" destination="-1" eventType="touchUpInside" id="fGE-QM-8Sd"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="iO6-og-iso">
+                                    <rect key="frame" x="209" y="7" width="32" height="42"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <state key="normal" title="H"/>
+                                    <connections>
+                                        <action selector="keyboardButtonTappedWithSender:" destination="-1" eventType="touchUpInside" id="HEQ-qk-xbY"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="OSn-RU-KSk">
+                                    <rect key="frame" x="247" y="7" width="32" height="42"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <state key="normal" title="J"/>
+                                    <connections>
+                                        <action selector="keyboardButtonTappedWithSender:" destination="-1" eventType="touchUpInside" id="YL3-0y-TqL"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="gsf-8b-WL7">
+                                    <rect key="frame" x="284" y="7" width="32" height="42"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <state key="normal" title="K"/>
+                                    <connections>
+                                        <action selector="keyboardButtonTappedWithSender:" destination="-1" eventType="touchUpInside" id="9lN-pX-uLE"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="292-rA-tAD">
+                                    <rect key="frame" x="322" y="7" width="32" height="42"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <state key="normal" title="L"/>
+                                    <connections>
+                                        <action selector="keyboardButtonTappedWithSender:" destination="-1" eventType="touchUpInside" id="4H8-qe-3oj"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                        </view>
+                        <view contentMode="scaleToFill" id="CcY-bX-QRZ">
+                            <rect key="frame" x="0.0" y="112" width="375" height="56"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Mgf-Xl-6DA">
+                                    <rect key="frame" x="59" y="7" width="32" height="42"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <state key="normal" title="Z"/>
+                                    <connections>
+                                        <action selector="keyboardButtonTappedWithSender:" destination="-1" eventType="touchUpInside" id="zef-gM-fob"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="RQv-4m-Hvx">
+                                    <rect key="frame" x="96" y="7" width="32" height="42"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <state key="normal" title="X"/>
+                                    <connections>
+                                        <action selector="keyboardButtonTappedWithSender:" destination="-1" eventType="touchUpInside" id="HoP-3D-hTS"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="fKd-bq-PdX">
+                                    <rect key="frame" x="134" y="7" width="32" height="42"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <state key="normal" title="C"/>
+                                    <connections>
+                                        <action selector="keyboardButtonTappedWithSender:" destination="-1" eventType="touchUpInside" id="AYZ-40-5BN"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="cdS-Gz-V9I">
+                                    <rect key="frame" x="172" y="7" width="32" height="42"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <state key="normal" title="V"/>
+                                    <connections>
+                                        <action selector="keyboardButtonTappedWithSender:" destination="-1" eventType="touchUpInside" id="9NS-Tg-4Y3"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="FJH-Kc-PKI">
+                                    <rect key="frame" x="209" y="7" width="32" height="42"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <state key="normal" title="B"/>
+                                    <connections>
+                                        <action selector="keyboardButtonTappedWithSender:" destination="-1" eventType="touchUpInside" id="647-5S-cKY"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="f3W-ct-Cn8">
+                                    <rect key="frame" x="247" y="7" width="32" height="42"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <state key="normal" title="N"/>
+                                    <connections>
+                                        <action selector="keyboardButtonTappedWithSender:" destination="-1" eventType="touchUpInside" id="hh8-x0-2qf"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="edx-fY-twn">
+                                    <rect key="frame" x="284" y="7" width="32" height="42"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <state key="normal" title="M"/>
+                                    <connections>
+                                        <action selector="keyboardButtonTappedWithSender:" destination="-1" eventType="touchUpInside" id="Nx1-13-GZf"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="cyy-wl-3Zp">
+                                    <rect key="frame" x="12" y="7" width="42" height="42"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                    <state key="normal" image="icon.shift"/>
+                                    <connections>
+                                        <action selector="shiftButtonTappedWithSender:" destination="-1" eventType="touchUpInside" id="TUu-jS-szV"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                        </view>
+                        <view contentMode="scaleToFill" id="ZtY-Wf-lx8">
+                            <rect key="frame" x="0.0" y="168" width="375" height="56"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Ya7-Y6-PRm">
+                                    <rect key="frame" x="3" y="7" width="88" height="42"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <state key="normal" title="123">
+                                        <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="numericButtonTappedWithSender:" destination="-1" eventType="touchUpInside" id="a7Z-ny-fL1"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="3ql-W9-KWu">
+                                    <rect key="frame" x="284" y="7" width="88" height="42"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <state key="normal" title="return"/>
+                                    <connections>
+                                        <action selector="returnButtonTappedWithSender:" destination="-1" eventType="touchUpInside" id="ZIa-0L-RaM"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="peH-Rb-UoD">
+                                    <rect key="frame" x="96" y="7" width="183" height="42"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <state key="normal" title="space"/>
+                                    <connections>
+                                        <action selector="spacebarButtonTappedWithSender:" destination="-1" eventType="touchUpInside" id="3io-Xw-K8A"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.93333333333333335" green="0.93333333333333335" blue="0.93333333333333335" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="291" y="419"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="icon.shift" width="18" height="16"/>
+    </resources>
+</document>
