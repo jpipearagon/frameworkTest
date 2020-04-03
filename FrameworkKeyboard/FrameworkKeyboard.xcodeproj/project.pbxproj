@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		04200B992436F0130088AAFE /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 046F25E12436B1FC0098676A /* CoreData.framework */; };
+		04200B9A2436F0130088AAFE /* CoreData.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 046F25E12436B1FC0098676A /* CoreData.framework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		04200B9C2436F0160088AAFE /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 046F25E72436B3050098676A /* SystemConfiguration.framework */; };
+		04200B9D2436F0160088AAFE /* SystemConfiguration.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 046F25E72436B3050098676A /* SystemConfiguration.framework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		046F254A2436AE970098676A /* FrameworkKeyboard.h in Headers */ = {isa = PBXBuildFile; fileRef = 046F25482436AE970098676A /* FrameworkKeyboard.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		046F25A02436B1C90098676A /* TaskDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046F25532436B1C90098676A /* TaskDelegate.swift */; };
 		046F25A12436B1C90098676A /* MultipartFormData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046F25542436B1C90098676A /* MultipartFormData.swift */; };
@@ -73,12 +77,25 @@
 		046F25DE2436B1CA0098676A /* AccessGrantedView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 046F259C2436B1C90098676A /* AccessGrantedView.xib */; };
 		046F25DF2436B1CA0098676A /* OtherActionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046F259D2436B1C90098676A /* OtherActionViewCell.swift */; };
 		046F25E02436B1CA0098676A /* EmojiKeyBoardService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046F259F2436B1C90098676A /* EmojiKeyBoardService.swift */; };
-		046F25E22436B1FC0098676A /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 046F25E12436B1FC0098676A /* CoreData.framework */; };
 		046F25E42436B2760098676A /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 046F25E32436B2430098676A /* libsqlite3.tbd */; };
 		046F25E62436B2F30098676A /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 046F25E52436B2EB0098676A /* libz.tbd */; };
-		046F25E82436B3050098676A /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 046F25E72436B3050098676A /* SystemConfiguration.framework */; };
-		73A8CCD8FE7F34EB26F60E40 /* Pods_FrameworkKeyboard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40AF683C31EB136467A2D9F2 /* Pods_FrameworkKeyboard.framework */; };
+		FD907361089DD662674BB417 /* Pods_FrameworkKeyboard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67B614220674811276354ADE /* Pods_FrameworkKeyboard.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		04200B9B2436F0130088AAFE /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				04200B9D2436F0160088AAFE /* SystemConfiguration.framework in Embed Frameworks */,
+				04200B9A2436F0130088AAFE /* CoreData.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		046F25452436AE970098676A /* FrameworkKeyboard.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FrameworkKeyboard.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -153,9 +170,9 @@
 		046F25E32436B2430098676A /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/libsqlite3.tbd; sourceTree = DEVELOPER_DIR; };
 		046F25E52436B2EB0098676A /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/libz.tbd; sourceTree = DEVELOPER_DIR; };
 		046F25E72436B3050098676A /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/SystemConfiguration.framework; sourceTree = DEVELOPER_DIR; };
-		40AF683C31EB136467A2D9F2 /* Pods_FrameworkKeyboard.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FrameworkKeyboard.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		8715F287844CCF012023BC69 /* Pods-FrameworkKeyboard.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FrameworkKeyboard.debug.xcconfig"; path = "Target Support Files/Pods-FrameworkKeyboard/Pods-FrameworkKeyboard.debug.xcconfig"; sourceTree = "<group>"; };
-		B74CFB3E34B3CAE4EC72FF97 /* Pods-FrameworkKeyboard.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FrameworkKeyboard.release.xcconfig"; path = "Target Support Files/Pods-FrameworkKeyboard/Pods-FrameworkKeyboard.release.xcconfig"; sourceTree = "<group>"; };
+		346C5EECBD490F5851D8E494 /* Pods-FrameworkKeyboard.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FrameworkKeyboard.debug.xcconfig"; path = "Target Support Files/Pods-FrameworkKeyboard/Pods-FrameworkKeyboard.debug.xcconfig"; sourceTree = "<group>"; };
+		67B614220674811276354ADE /* Pods_FrameworkKeyboard.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FrameworkKeyboard.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA5872DC4A438CCDE2C7CAE0 /* Pods-FrameworkKeyboard.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FrameworkKeyboard.release.xcconfig"; path = "Target Support Files/Pods-FrameworkKeyboard/Pods-FrameworkKeyboard.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -164,10 +181,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				046F25E42436B2760098676A /* libsqlite3.tbd in Frameworks */,
-				046F25E82436B3050098676A /* SystemConfiguration.framework in Frameworks */,
+				04200B9C2436F0160088AAFE /* SystemConfiguration.framework in Frameworks */,
+				04200B992436F0130088AAFE /* CoreData.framework in Frameworks */,
 				046F25E62436B2F30098676A /* libz.tbd in Frameworks */,
-				73A8CCD8FE7F34EB26F60E40 /* Pods_FrameworkKeyboard.framework in Frameworks */,
-				046F25E22436B1FC0098676A /* CoreData.framework in Frameworks */,
+				FD907361089DD662674BB417 /* Pods_FrameworkKeyboard.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -197,18 +214,10 @@
 			children = (
 				046F25E92436C40E0098676A /* Sources */,
 				046F25EA2436C41A0098676A /* Resources */,
-				046F25502436B1C90098676A /* lib */,
 				046F25482436AE970098676A /* FrameworkKeyboard.h */,
 				046F25492436AE970098676A /* Info.plist */,
 			);
 			path = FrameworkKeyboard;
-			sourceTree = "<group>";
-		};
-		046F25502436B1C90098676A /* lib */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = lib;
 			sourceTree = "<group>";
 		};
 		046F25512436B1C90098676A /* Framework */ = {
@@ -421,8 +430,8 @@
 		3151B2541A3C668F37696ED2 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				8715F287844CCF012023BC69 /* Pods-FrameworkKeyboard.debug.xcconfig */,
-				B74CFB3E34B3CAE4EC72FF97 /* Pods-FrameworkKeyboard.release.xcconfig */,
+				346C5EECBD490F5851D8E494 /* Pods-FrameworkKeyboard.debug.xcconfig */,
+				BA5872DC4A438CCDE2C7CAE0 /* Pods-FrameworkKeyboard.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -434,7 +443,7 @@
 				046F25E52436B2EB0098676A /* libz.tbd */,
 				046F25E32436B2430098676A /* libsqlite3.tbd */,
 				046F25E12436B1FC0098676A /* CoreData.framework */,
-				40AF683C31EB136467A2D9F2 /* Pods_FrameworkKeyboard.framework */,
+				67B614220674811276354ADE /* Pods_FrameworkKeyboard.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -459,11 +468,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 046F254D2436AE970098676A /* Build configuration list for PBXNativeTarget "FrameworkKeyboard" */;
 			buildPhases = (
-				ACD792290B1E6DA3F6B0E98B /* [CP] Check Pods Manifest.lock */,
+				E91B7CE6E3ED777F6EEFD4A2 /* [CP] Check Pods Manifest.lock */,
 				046F25402436AE970098676A /* Headers */,
 				046F25412436AE970098676A /* Sources */,
 				046F25422436AE970098676A /* Frameworks */,
 				046F25432436AE970098676A /* Resources */,
+				04200B9B2436F0130088AAFE /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -527,7 +537,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		ACD792290B1E6DA3F6B0E98B /* [CP] Check Pods Manifest.lock */ = {
+		E91B7CE6E3ED777F6EEFD4A2 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -737,7 +747,7 @@
 		};
 		046F254E2436AE970098676A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8715F287844CCF012023BC69 /* Pods-FrameworkKeyboard.debug.xcconfig */;
+			baseConfigurationReference = 346C5EECBD490F5851D8E494 /* Pods-FrameworkKeyboard.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -762,7 +772,7 @@
 		};
 		046F254F2436AE970098676A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B74CFB3E34B3CAE4EC72FF97 /* Pods-FrameworkKeyboard.release.xcconfig */;
+			baseConfigurationReference = BA5872DC4A438CCDE2C7CAE0 /* Pods-FrameworkKeyboard.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
